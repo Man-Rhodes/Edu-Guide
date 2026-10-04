@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="AI education assistant for universities, colleges and courses in Gauteng.">
+
+    <title>EduGuide Gauteng | AI Education Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🎓 EduGuide Gauteng
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#institutions">Institutions</a>
+
+            <a href="#courses">Courses</a>
+
+            <a href="#chatbot">AI Assistant</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Find Your Future
+                <span>🎓</span>
+            </h1>
+
+            <p>
+                Explore universities, colleges, courses and
+                study opportunities across Gauteng.
+            </p>
+
+            <a href="#chatbot" class="hero-button">
+                Ask the AI Assistant
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Institutions -->
+
+    <section id="institutions" class="section">
+
+        <h2>Explore Institutions</h2>
+
+        <p>
+            Find universities and colleges in Gauteng.
+        </p>
+
+        <div class="institution-cards">
+
+            <div class="card">
+
+                <h3>🏛️ Universities</h3>
+
+                <p>
+                    Explore universities and higher education
+                    institutions in Gauteng.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🏫 Colleges</h3>
+
+                <p>
+                    Discover colleges and TVET institutions
+                    offering different programmes.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>📚 Courses</h3>
+
+                <p>
+                    Find courses based on your interests,
+                    qualifications and career goals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses -->
+
+    <section id="courses" class="section courses-section">
+
+        <h2>What Can You Study?</h2>
+
+        <div class="course-grid">
+
+            <div>💻 Information Technology</div>
+
+            <div>🧮 Accounting</div>
+
+            <div>⚕️ Health Sciences</div>
+
+            <div>⚙️ Engineering</div>
+
+            <div>⚖️ Law</div>
+
+            <div>📊 Business</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI Chatbot -->
+
+    <section id="chatbot" class="chatbot-section">
+
+        <div class="chatbot">
+
+            <!-- Chatbot Header -->
+
+            <div class="chatbot-header">
+
+                <div>
+
+                    <h2>
+                        🤖 EduGuide AI
+                    </h2>
+
+                    <span>
+                        Gauteng Education Assistant
+                    </span>
+
+                </div>
+
+                <button id="clear-chat"
+                        title="Clear conversation">
+
+                    🗑️
+
+                </button>
+
+            </div>
+
+
+            <!-- Chat Window -->
+
+            <div id="chatbot-window"
+                 class="chatbot-window">
+
+                <div class="bot-message">
+
+                    <div class="message-name">
+                        🤖 EduGuide AI
+                    </div>
+
+                    <p>
+                        Hello! 👋 I'm EduGuide AI.
+                    </p>
+
+                    <p>
+                        I can help you find information about
+                        universities, colleges, courses and
+                        applications in Gauteng.
+                    </p>
+
+                    <p>
+                        Try asking:
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Which universities are in Gauteng?
+                        </li>
+
+                        <li>
+                            Where can I study IT?
+                        </li>
+
+                        <li>
+                            What is the difference between a
+                            university and a TVET college?
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Typing Indicator -->
+
+            <div id="typing-indicator"
+                 class="typing-indicator hidden">
+
+                🤖 EduGuide is thinking...
+
+            </div>
+
+
+            <!-- Input -->
+
+            <div class="chatbot-input">
+
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Ask about universities, colleges or courses..."
+                    autocomplete="off"
+                >
+
+                <button id="send-button">
+
+                    Send
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 EduGuide Gauteng
+        </p>
+
+        <p>
+            Information should always be verified with the
+            relevant institution.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

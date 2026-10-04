@@ -1,0 +1,260 @@
+
+[
+  {
+    "id": "universities-gauteng",
+    "category": "Universities",
+    "questions": [
+      "Which universities are in Gauteng?",
+      "What varsities are in Gauteng?",
+      "List universities in Gauteng",
+      "Which universities are in Johannesburg?",
+      "What universities are near me in Gauteng?"
+    ],
+    "keywords": [
+      "universities",
+      "university",
+      "varsities",
+      "varsity",
+      "gauteng universities"
+    ],
+    "answer": "Gauteng has several public universities and universities of technology. These include the University of Johannesburg (UJ), University of Pretoria (UP), University of the Witwatersrand (Wits), University of South Africa (UNISA), Tshwane University of Technology (TUT) and Vaal University of Technology (VUT). Each institution offers different qualifications and has its own admission requirements. Which university would you like to know more about?"
+  },
+  {
+    "id": "it-courses",
+    "category": "Information Technology",
+    "questions": [
+      "Where can I study IT in Gauteng?",
+      "Which universities offer Information Technology?",
+      "Where can I study computer science?",
+      "What universities offer software development?",
+      "Which colleges offer IT courses?"
+    ],
+    "keywords": [
+      "study it",
+      "information technology",
+      "computer science",
+      "software development",
+      "programming",
+      "it courses"
+    ],
+    "answer": "You can investigate IT-related qualifications at the University of Johannesburg, University of Pretoria, Wits, TUT and UNISA, among other institutions. Programmes may include Information Technology, Computer Science, Informatics, Information Systems and software development. For example, UJ offers a BSc in Information Technology. The exact qualification and entry requirements depend on the institution. Are you looking for a diploma, degree or higher certificate?"
+  },
+  {
+    "id": "aps-explanation",
+    "category": "Admissions",
+    "questions": [
+      "What is APS?",
+      "What does APS mean?",
+      "How is APS calculated?",
+      "What is an admission point score?",
+      "How do universities calculate APS?"
+    ],
+    "keywords": [
+      "aps",
+      "admission point score",
+      "admission points",
+      "calculate aps",
+      "points score"
+    ],
+    "answer": "APS stands for Admission Point Score. Universities use an admissions points system to assess applicants' school results. The calculation differs between institutions and qualifications. Some institutions exclude Life Orientation or use additional subject requirements. Tell me your subjects and percentages, together with the institution and course you are interested in, so I can help you understand the published requirements."
+  },
+  {
+    "id": "aps-it-uj",
+    "category": "IT Admission Requirements",
+    "questions": [
+      "What APS do I need for IT at UJ?",
+      "What are the requirements for UJ Information Technology?",
+      "Can I study IT at UJ?",
+      "What is the APS for UJ BSc IT?"
+    ],
+    "keywords": [
+      "uj it aps",
+      "uj information technology",
+      "uj bsc it",
+      "uj it requirements"
+    ],
+    "answer": "UJ's published BSc in Information Technology requirements list a minimum APS of 30, English level 5 (60% or above) and Mathematics level 6 (70% or above). The programme is listed as a three-year, full-time qualification at the Auckland Park Kingsway campus. Requirements can change, so confirm the requirements for your intended intake on the official UJ programme page before applying."
+  },
+  {
+    "id": "aps-it-up",
+    "category": "IT Admission Requirements",
+    "questions": [
+      "What APS do I need for IT at UP?",
+      "What are the requirements for Information Technology at Pretoria?",
+      "Can I study BIT at University of Pretoria?",
+      "What are the UP IT requirements?"
+    ],
+    "keywords": [
+      "up it aps",
+      "university of pretoria it",
+      "up bit",
+      "pretoria information technology"
+    ],
+    "answer": "The University of Pretoria offers a Bachelor of Information Technology in Information Systems (BIT). Its published 2026 requirements for NSC/IEB applicants list an APS of 30, English level 5 and Mathematics level 5. Life Orientation is excluded from the APS calculation. Meeting the minimum requirements does not guarantee admission. Check the programme requirements for the year you intend to apply."
+  },
+  {
+    "id": "mathematics-literacy-it",
+    "category": "IT Admission Requirements",
+    "questions": [
+      "Can I study IT with Maths Literacy?",
+      "Can I do computer science with Mathematical Literacy?",
+      "Do I need pure Mathematics for IT?",
+      "Can I study programming without Mathematics?"
+    ],
+    "keywords": [
+      "maths literacy",
+      "mathematical literacy",
+      "maths lit",
+      "pure mathematics",
+      "mathematics for it"
+    ],
+    "answer": "Admission with Mathematical Literacy depends on the institution and the qualification. Some IT-related diplomas or certificates may have different mathematics requirements from Computer Science or BSc degrees. Do not assume that every IT programme accepts Mathematical Literacy. Tell me your Maths Literacy percentage, APS and preferred institution so I can help you identify the requirements to check."
+  },
+  {
+    "id": "unisa-applications",
+    "category": "Applications",
+    "questions": [
+      "When do UNISA applications close?",
+      "When can I apply to UNISA?",
+      "Are UNISA applications open?",
+      "How do I apply to UNISA for 2027?",
+      "What is the UNISA application deadline?"
+    ],
+    "keywords": [
+      "unisa applications",
+      "unisa closing date",
+      "unisa application deadline",
+      "apply to unisa",
+      "unisa 2027"
+    ],
+    "answer": "UNISA's published application period for 2027 undergraduate qualifications is 17 August to 9 October 2026. Applicants should check the requirements for their chosen qualification, upload the required documents and complete the application and fee-payment steps. Some qualifications have different application periods or conditions. Verify your programme's dates on the official UNISA website."
+  },
+  {
+    "id": "uj-applications",
+    "category": "Applications",
+    "questions": [
+      "When do UJ applications close?",
+      "How do I apply to UJ?",
+      "Is UJ open for 2027 applications?",
+      "What is the UJ application deadline?"
+    ],
+    "keywords": [
+      "uj applications",
+      "uj closing date",
+      "apply to uj",
+      "uj application deadline",
+      "uj 2027"
+    ],
+    "answer": "UJ's published undergraduate application period for the 2027 intake opens on 1 April 2026 and closes on 31 October 2026 at 12:00. Some programmes or categories may have specific requirements or dates. Check the official UJ admissions website and your chosen programme before submitting an application."
+  },
+  {
+    "id": "university-application-documents",
+    "category": "Applications",
+    "questions": [
+      "What documents do I need to apply to university?",
+      "What documents are required for university applications?",
+      "Do I need a certified ID to apply?",
+      "What do I need before applying to university?"
+    ],
+    "keywords": [
+      "application documents",
+      "documents needed",
+      "certified id",
+      "matric certificate",
+      "apply documents"
+    ],
+    "answer": "Commonly requested documents include a certified South African ID or passport, Grade 11 results for current Grade 12 learners or final matric results for applicants who have completed school, and any other documents requested by the institution. International applicants may need additional documents. Check the official application checklist because requirements differ."
+  },
+  {
+    "id": "tvet-colleges",
+    "category": "TVET Colleges",
+    "questions": [
+      "Which TVET colleges are in Gauteng?",
+      "List TVET colleges in Gauteng",
+      "Where can I study at a TVET college?",
+      "What colleges offer vocational courses in Gauteng?"
+    ],
+    "keywords": [
+      "tvet",
+      "tvet colleges",
+      "vocational colleges",
+      "public colleges",
+      "technical colleges"
+    ],
+    "answer": "Public TVET colleges in Gauteng include Tshwane North TVET College, Tshwane South TVET College, Ekurhuleni East TVET College, Ekurhuleni West TVET College, Sedibeng TVET College and South West Gauteng TVET College. Programmes, campuses and application dates vary. Tell me your area and the course you want to study so I can narrow down the options."
+  },
+  {
+    "id": "nsfas",
+    "category": "Funding",
+    "questions": [
+      "What is NSFAS?",
+      "How do I apply for NSFAS?",
+      "Can NSFAS pay for university?",
+      "Does NSFAS fund TVET colleges?",
+      "Who qualifies for NSFAS?"
+    ],
+    "keywords": [
+      "nsfas",
+      "student funding",
+      "financial aid",
+      "bursary",
+      "funding for university"
+    ],
+    "answer": "NSFAS is the National Student Financial Aid Scheme. It provides financial assistance to eligible South African students at public universities and TVET colleges, subject to its eligibility rules and funding conditions. Applications, required documents and funding rules can change. Check the official NSFAS website for the current application period and eligibility criteria."
+  },
+  {
+    "id": "diploma-vs-degree",
+    "category": "Qualifications",
+    "questions": [
+      "What is the difference between a diploma and a degree?",
+      "Is a diploma the same as a degree?",
+      "Which is better, a diploma or degree?",
+      "Can I get a job with a diploma in IT?"
+    ],
+    "keywords": [
+      "diploma vs degree",
+      "difference between diploma and degree",
+      "it diploma",
+      "it degree",
+      "qualification types"
+    ],
+    "answer": "A diploma and a degree are different types of higher education qualifications. A diploma often focuses on applied and career-oriented learning, while a bachelor's degree generally provides broader academic and theoretical study. Both can lead to employment, depending on the qualification, skills and employer requirements. Check the NQF level, programme content and further-study pathways of the specific qualification."
+  },
+  {
+    "id": "study-distance",
+    "category": "Study Modes",
+    "questions": [
+      "Can I study IT online?",
+      "Which universities offer distance learning?",
+      "Can I study while working?",
+      "Where can I study part time?"
+    ],
+    "keywords": [
+      "online study",
+      "distance learning",
+      "part time",
+      "study while working",
+      "online university"
+    ],
+    "answer": "UNISA is a major public distance-learning institution in South Africa. Other institutions may offer selected online, blended or part-time programmes. Availability depends on the qualification. Check whether your chosen course requires campus attendance, practical sessions or examinations at a designated venue."
+  },
+  {
+    "id": "hello",
+    "category": "Greetings",
+    "questions": [
+      "Hello",
+      "Hi",
+      "Good morning",
+      "How are you?",
+      "Hey EduGuide"
+    ],
+    "keywords": [
+      "hello",
+      "hi",
+      "hey",
+      "good morning",
+      "good afternoon"
+    ],
+    "answer": "Hello! 👋 Welcome to EduGuide Gauteng. I can help you explore universities, TVET colleges, courses, admission requirements, applications and student funding. What would you like to study?"
+  }
+]
