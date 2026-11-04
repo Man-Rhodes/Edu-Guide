@@ -521,3 +521,47 @@ footer {
     }
 
 }
+/* Profile and activity */
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    padding: 80px 8%;
+    background: #eaf2f8;
+}
+.profile-intro { max-width: 460px; padding-top: 30px; }
+.profile-eyebrow { color: #26728a; font-size: 12px; letter-spacing: .12em; font-weight: bold; }
+.profile-intro h2 { color: #14213d; font-size: 38px; line-height: 1.15; margin: 12px 0 18px; }
+.profile-intro p, .profile-card p { color: #526174; }
+.profile-card { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 10px 35px rgba(20,33,61,.1); }
+.profile-card h3 { color: #14213d; font-size: 25px; }
+.profile-card form { display: grid; gap: 8px; margin-top: 20px; }
+.profile-card label { display: block; font-weight: bold; font-size: 14px; margin-top: 8px; }
+.profile-card input { width: 100%; border: 1px solid #bdc9d5; border-radius: 8px; padding: 12px; font: inherit; }
+.profile-card input:focus { outline: 2px solid #4cc9f0; outline-offset: 2px; }
+.profile-button { border: 0; border-radius: 8px; padding: 13px; background: #14213d; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+.profile-button:disabled { opacity: .6; }
+.auth-switch { margin-top: 18px; font-size: 14px; }
+.auth-switch button, #sign-out { border: 0; background: none; color: #176782; font: inherit; font-weight: bold; cursor: pointer; text-decoration: underline; }
+.profile-card .auth-error { color: #a12222; font-size: 14px; }
+.auth-error:empty { display: none; }
+.profile-card .profile-note { border-top: 1px solid #e5ebf0; margin-top: 24px; padding-top: 16px; font-size: 12px; }
+.activity-heading { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.activity-count { display: flex; gap: 12px; align-items: baseline; background: #eef7fa; padding: 15px; margin: 20px 0; border-radius: 10px; color: #14213d; }
+.activity-count strong { font-size: 28px; }
+.recent-questions { list-style: none; }
+.recent-questions li { display: flex; justify-content: space-between; gap: 15px; border-bottom: 1px solid #e5ebf0; padding: 12px 0; overflow-wrap: anywhere; }
+.recent-questions time { color: #617084; font-size: 12px; white-space: nowrap; }
+#activity-empty { margin-top: 8px; font-size: 14px; }
+[hidden] { display: none !important; }
+@media (max-width: 768px) {
+    .navbar nav { flex-wrap: wrap; justify-content: center; }
+    .profile-section { grid-template-columns: 1fr; gap: 25px; padding: 50px 6%; }
+    .profile-intro { padding-top: 0; }
+    .profile-intro h2 { font-size: 32px; }
+    .profile-card { padding: 24px; }
+}
+#profile { scroll-margin-top: 95px; }
+#sign-out { white-space: nowrap; }
+@media (max-width: 768px) { #profile { scroll-margin-top: 155px; } }
