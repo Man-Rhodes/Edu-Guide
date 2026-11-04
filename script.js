@@ -419,6 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
         // Show user's message
         addUserMessage(question);
+        document.dispatchEvent(new CustomEvent("eduguide:question", { detail: question }));
  
  
         // Clear input box
