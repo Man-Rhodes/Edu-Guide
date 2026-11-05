@@ -32,6 +32,8 @@
 
             <a href="#home">Home</a>
 
+            <a href="#learning">Audio lessons</a>
+
             <a href="#institutions">Institutions</a>
 
             <a href="#courses">Courses</a>
@@ -147,12 +149,34 @@
     </section>
 
 
+    <section id="learning" class="learning-section">
+        <div class="learning-header">
+            <div><span class="profile-eyebrow">LISTEN AND LEARN</span><h2>Learn at your own pace.</h2>
+            <p>Explore short audio introductions for learners in Grades 10–12. Select a subject and a lesson to begin.</p></div>
+            <p class="learning-badge">6 subjects · 12 lessons</p>
+        </div>
+        <div class="learning-layout">
+            <div class="learning-controls">
+                <label for="subject-select">Subject</label><select id="subject-select"></select>
+                <label for="module-select">Lesson</label><select id="module-select"></select>
+                <p id="subject-description"></p>
+            </div>
+            <div class="lesson-card">
+                <span class="profile-eyebrow">AUDIO LESSON</span><h3 id="lesson-title">Choose a lesson</h3>
+                <p id="lesson-status" role="status">Loading lessons...</p>
+                <div class="player-actions"><button id="play-lesson" type="button" disabled>▶ Play lesson</button><button id="pause-lesson" type="button" disabled>Pause</button><button id="stop-lesson" type="button" disabled>Stop</button></div>
+                <details><summary>Read the transcript</summary><p id="lesson-transcript"></p></details>
+            </div>
+        </div>
+        <p class="learning-note">This starter collection is not a complete curriculum. Audio uses your device’s speech voice. Sign in to save listening activity.</p>
+    </section>
+
     <!-- Profile -->
     <section id="profile" class="profile-section">
         <div class="profile-intro">
             <span class="profile-eyebrow">YOUR EDUGUIDE</span>
             <h2>Pick up where you left off.</h2>
-            <p>Keep track of your questions and see your recent activity each time you sign in.</p>
+            <p>Keep track of your listening and questions, and return to your activity whenever you sign in.</p>
         </div>
         <div class="profile-card">
             <div id="auth-panel">
@@ -179,12 +203,16 @@
                 </div>
                 <p id="last-login"></p>
                 <p id="activity-error" class="auth-error" role="alert"></p>
-                <div class="activity-count"><strong id="question-count">0</strong><span>questions asked</span></div>
+                <label for="activity-range">Listening activity</label>
+                <select id="activity-range"><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="all">All time</option></select>
+                <div class="listening-stats"><div><strong id="listen-sessions">0</strong><span>sessions</span></div><div><strong id="listen-time">0 min</strong><span>listened</span></div><div><strong id="listen-completed">0</strong><span>completed</span></div></div>
+                <h4>Recent listening</h4><ul id="listening-history" class="recent-questions"></ul><p id="listening-empty">No listening activity in this period.</p>
+                <div class="activity-count"><strong id="question-count">0</strong><span>questions asked in total</span></div>
                 <h4>Recent questions</h4>
                 <ul id="recent-questions" class="recent-questions"></ul>
                 <p id="activity-empty">No questions yet. Ask the assistant to start your activity history.</p>
             </div>
-            <p class="profile-note">Your last five questions are saved to your profile when you are signed in.</p>
+            <p class="profile-note">Listening sessions and your last five questions are saved when you are signed in.</p>
         </div>
     </section>
 
@@ -320,6 +348,7 @@
 
     <script src="script.js"></script>
     <script src="auth.js"></script>
+    <script src="learning.js"></script>
 
 </body>
 

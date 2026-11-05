@@ -1,0 +1,26 @@
+[
+  {"id":"mathematics","name":"Mathematics","description":"Build confidence with numbers, algebra and graphs.","modules":[
+    {"id":"algebra","title":"Working with algebra","text":"Algebra uses letters to represent numbers. An equation states that two expressions have the same value. To solve an equation, apply the same operation to both sides. For example, if x plus three equals seven, subtract three from both sides to find that x equals four. Check your answer by substituting it into the original equation."},
+    {"id":"functions","title":"Understanding functions","text":"A function describes a relationship between an input and an output. For example, if f of x equals two x plus one, an input of three gives an output of seven. A graph shows these input and output pairs as points. In a straight line graph, the gradient tells us how the output changes as the input increases."}
+  ]},
+  {"id":"physical-sciences","name":"Physical Sciences","description":"Explore motion, energy and matter.","modules":[
+    {"id":"motion","title":"Describing motion","text":"Speed describes how quickly distance changes over time. Average speed is total distance divided by total time. Velocity also includes direction. Acceleration is the rate at which velocity changes. Always check that your units are consistent before you calculate."},
+    {"id":"atoms","title":"Atoms and elements","text":"Matter is made of atoms. An atom contains a nucleus with protons and neutrons, surrounded by electrons. The number of protons identifies an element. Atoms can join to form molecules, and chemical reactions rearrange atoms to make new substances."}
+  ]},
+  {"id":"life-sciences","name":"Life Sciences","description":"Study living systems and their environment.","modules":[
+    {"id":"cells","title":"Cells and their functions","text":"Cells are the basic units of living organisms. The cell membrane controls movement of substances into and out of the cell. The nucleus contains genetic information in cells that have a nucleus. Plant cells also have a cell wall, and many contain chloroplasts used in photosynthesis."},
+    {"id":"ecosystems","title":"Ecosystems and food webs","text":"An ecosystem includes living organisms and the nonliving environment with which they interact. Producers make food, while consumers obtain energy by eating other organisms. Decomposers break down dead material. Food webs show interconnected feeding relationships and the flow of energy."}
+  ]},
+  {"id":"english","name":"English","description":"Practise reading, writing and communication.","modules":[
+    {"id":"reading","title":"Reading for meaning","text":"When reading a text, first identify its main idea and purpose. Look for evidence that supports the writer's point. Consider who the audience is and how word choice and tone shape meaning. Separate what the text states directly from inferences that you make using evidence."},
+    {"id":"writing","title":"Planning a paragraph","text":"A clear paragraph develops one main idea. Begin with a topic sentence, then explain the idea and support it with relevant evidence or examples. Link your sentences logically and finish by connecting the point to your overall argument. Read your work again to check clarity and grammar."}
+  ]},
+  {"id":"mathematical-literacy","name":"Mathematical Literacy","description":"Apply mathematics to everyday decisions.","modules":[
+    {"id":"budget","title":"Making a budget","text":"A budget compares money coming in with planned spending. List your income, then list fixed and variable expenses. Subtract expenses from income to see whether you have a surplus or a shortfall. When comparing prices, check the unit price as well as the total cost."},
+    {"id":"percentages","title":"Percentages in daily life","text":"A percentage expresses a quantity out of one hundred. To calculate ten percent of two hundred rand, multiply two hundred by ten divided by one hundred. The result is twenty rand. For a discount, subtract the discount from the original price, and check whether any additional fees apply."}
+  ]},
+  {"id":"life-orientation","name":"Life Orientation","description":"Reflect on wellbeing and future choices.","modules":[
+    {"id":"study-plan","title":"Making a study plan","text":"A study plan helps you divide a large task into manageable steps. List your subjects and deadlines, then set a specific goal for each session. Include breaks and time to review what you have learned. Adjust the plan when you notice that a topic needs more practice."},
+    {"id":"careers","title":"Exploring careers","text":"When exploring a career, consider your interests, strengths and the tasks involved in the work. Research entry requirements and compare different study routes. Speak to people in the field where possible, and check current admission information directly with the institution."}
+  ]}
+]

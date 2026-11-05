@@ -2,12 +2,13 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const learning = require('./learning-db');
 
 const port = Number(process.env.PORT || 3000);
 const dataFile = process.env.EDUGUIDE_DATA_FILE || path.join(__dirname, 'data', 'accounts.json');
 const sessions = new Map();
 const sessionLifetime = 24 * 60 * 60 * 1000;
-const files = { '/': ['index.html', 'text/html'], '/index.html': ['index.html', 'text/html'], '/style.css': ['style.css', 'text/css'], '/script.js': ['script.js', 'text/javascript'], '/auth.js': ['auth.js', 'text/javascript'] };
+const files = { '/': ['index.html', 'text/html'], '/index.html': ['index.html', 'text/html'], '/style.css': ['style.css', 'text/css'], '/script.js': ['script.js', 'text/javascript'], '/auth.js': ['auth.js', 'text/javascript'], '/learning.js': ['learning.js', 'text/javascript'] };
 
 function readAccounts() {
     try { return JSON.parse(fs.readFileSync(dataFile, 'utf8')); }
@@ -46,6 +47,14 @@ async function handle(req, res) {
         const [file, type] = files[url.pathname];
         res.writeHead(200, { 'Content-Type': type + '; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
         return fs.createReadStream(path.join(__dirname, file)).pipe(res);
+    }
+    if (req.method === 'GET' && url.pathname === '/api/catalog') return respond(res, 200, learning.getCatalog());
+    if (req.method === 'GET' && url.pathname === '/api/listening') {
+        const session = getSession(req);
+        if (!session) return respond(res, 401, { error: 'Please sign in first.' });
+        const range = url.searchParams.get('range') || '7';
+        if (!['7', '30', 'all'].includes(range)) return respond(res, 400, { error: 'Invalid time period.' });
+        return respond(res, 200, learning.getListening(session.id, range === 'all' ? null : Number(range)));
     }
     if (req.method === 'GET' && url.pathname === '/api/session') {
         const session = getSession(req);
@@ -90,6 +99,11 @@ async function handle(req, res) {
         return respond(res, 200, { ok: true });
     }
     if (!session) return respond(res, 401, { error: 'Please sign in first.' });
+    if (url.pathname === '/api/listening') {
+        if (typeof body.moduleId !== 'string' || !Number.isInteger(body.seconds) || body.seconds < 0 || body.seconds > 3600 || typeof body.completed !== 'boolean') return respond(res, 400, { error: 'Invalid listening activity.' });
+        if (!learning.addListening(session.id, body.moduleId, body.seconds, body.completed)) return respond(res, 400, { error: 'Unknown module.' });
+        return respond(res, 200, { ok: true });
+    }
     if (url.pathname === '/api/activity') {
         const question = typeof body.question === 'string' ? body.question.trim() : '';
         if (!question || question.length > 2000) return respond(res, 400, { error: 'Question must be between 1 and 2000 characters.' });

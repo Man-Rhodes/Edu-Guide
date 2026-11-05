@@ -13,6 +13,26 @@
         if (!response.ok) throw new Error(data.error || 'Please try again.');
         return data;
     }
+    async function refreshListening() {
+        if (!signedIn) return;
+        try {
+            const data = await request('/api/listening?range=' + byId('activity-range').value);
+            if (!signedIn) return;
+            byId('listen-sessions').textContent = data.sessions;
+            byId('listen-time').textContent = data.seconds < 60 ? data.seconds + ' sec' : (data.seconds / 60).toFixed(1) + ' min';
+            byId('listen-completed').textContent = data.completed;
+            const list = byId('listening-history'); list.replaceChildren();
+            data.recent.forEach(item => {
+                const li = document.createElement('li');
+                const title = document.createElement('span');
+                title.textContent = `${item.subject}: ${item.title} (${item.completed ? 'completed' : 'stopped'})`;
+                const date = document.createElement('time'); date.dateTime = item.date; date.textContent = new Date(item.date).toLocaleDateString();
+                li.append(title, date); list.appendChild(li);
+            });
+            byId('listening-empty').hidden = data.recent.length > 0;
+        } catch { byId('activity-error').textContent = 'Could not load listening activity. Please try again.'; }
+    }
+    byId('activity-range').addEventListener('change', refreshListening);
     function showSummary(data) {
         signedIn = Boolean(data);
         byId('auth-panel').hidden = signedIn;
@@ -36,6 +56,7 @@
             list.appendChild(li);
         });
         byId('activity-empty').hidden = data.recentQuestions.length > 0;
+        refreshListening();
     }
     byId('auth-switch').addEventListener('click', () => {
         registering = !registering;
@@ -51,6 +72,7 @@
     });
     form.addEventListener('submit', async event => {
         event.preventDefault();
+        document.dispatchEvent(new Event('eduguide:signing-out'));
         const button = byId('auth-submit');
         button.disabled = true;
         byId('auth-error').textContent = '';
@@ -64,8 +86,15 @@
         finally { button.disabled = false; }
     });
     byId('sign-out').addEventListener('click', async () => {
-        try { await pendingActivity; await request('/api/logout', {}); showSummary(null); if (registering) byId('auth-switch').click(); }
+        try { document.dispatchEvent(new Event('eduguide:signing-out')); await pendingActivity; await request('/api/logout', {}); showSummary(null); if (registering) byId('auth-switch').click(); }
         catch (error) { byId('activity-error').textContent = 'Could not sign out. Please try again.'; }
+    });
+    document.addEventListener('eduguide:listened', event => {
+        if (!signedIn) return;
+        pendingActivity = pendingActivity.then(async () => {
+            try { await request('/api/listening', event.detail); await refreshListening(); }
+            catch { byId('activity-error').textContent = 'Could not save your listening activity. Please check your connection.'; }
+        });
     });
     document.addEventListener('eduguide:question', event => {
         if (!signedIn) return;
